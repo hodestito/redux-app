@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import {TituloH1} from './tituloH1';
 
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -28,7 +29,7 @@ class App extends Component {
         <button onClick={() => clickButton(inputValue)}>
           Click me!
         </button>
-        <h1>{newValue}</h1>
+        <TituloH1 variavel={newValue} />
       </div>
     );
   }
